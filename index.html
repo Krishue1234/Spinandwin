@@ -278,7 +278,7 @@
     <!-- Warning Modal -->
     <div class="warning-modal" id="warningModal">
         <div class="warning-content">
-            <div class="warning-title"> IMPORTANT WARNING</div>
+            <div class="warning-title">⚠️ IMPORTANT WARNING</div>
             <div class="warning-text">
                 You must share with real persons or in groups only. Sharing with any business WhatsApp numbers will disqualify you from receiving your prize.
             </div>
@@ -303,9 +303,9 @@
             const warningBtn = document.getElementById('warningBtn');
 
             const visualPrizes = [
-                "â‚¹100 PayTM Cash", "Movie Ticket", "iPhone 14", "Samsung TV",
+                "₹100 PayTM Cash", "Movie Ticket", "iPhone 14", "Samsung TV",
                 "Smartwatch", "Bluetooth Speaker", "AirPods", "Better Luck Next Time",
-                "Amazon Voucher â‚¹50", "Free Coffee Coupon", "20% Discount Voucher", "Surprise Gift Box"
+                "Amazon Voucher ₹50", "Free Coffee Coupon", "20% Discount Voucher", "Surprise Gift Box"
             ];
             const winnablePrizes = visualPrizes.filter(prize => prize !== "Better Luck Next Time");
             const totalSegments = visualPrizes.length;
@@ -390,7 +390,7 @@
                 warningModal.style.display = 'none';
                 const winnerName = winnerNameInput.value.trim();
                 
-                const shareText =  *I'm thrilled! My name is ${winnerName}, and I just won a ${finalDisplayedPrize} on this awesome Spin & Win game!* You should try your luck too!`;
+                const shareText = `🎉 I'm thrilled! My name is ${winnerName}, and I just won a ${finalDisplayedPrize} on this awesome Spin & Win game! 🎁 You should try your luck too!`;
                 const pageUrl = window.location.href;
                 const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText + " " + pageUrl)}`;
                 
